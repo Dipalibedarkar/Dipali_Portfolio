@@ -1,0 +1,15 @@
+.card:hover {
+    
+    transform: translate(3em,0);
+  }
+
+  .card{
+    border: 2px solid green;
+    background-color: #fff;
+    
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  
+  }

@@ -1,0 +1,34 @@
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    height: 60px;
+    line-height: 20px;
+    background-color: #20716a;
+    font-size: 40px;
+    color: #ffd36b;
+    font-family: "Patrick Hand", cursive;
+}
+.sticky {
+    z-index: 1; /**** This styles positions the navbar above the Portfolio's flicards *****/
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    background: linear-gradient(112deg, rgba(7,5,42,1) 0%, rgba(47,17,41,0.5242471988795518) 35%, rgba(58,115,126,1) 100%);
+   
+    width: 100%;
+    height: 100vh; 
+}
+
+
+/******* scroll style *******/
+.active {
+    background: #10ABB0;
+    color: #10ABB0;
+}
