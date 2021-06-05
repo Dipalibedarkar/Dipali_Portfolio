@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../Assets/Images/dp.png';
+import profileImage from '../../Assets/Images/dp.jpg';
 import { Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
