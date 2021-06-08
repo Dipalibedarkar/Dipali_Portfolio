@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat:' no-repeat',
-        borderRadius: '160px',
+        borderRadius: '10px',
         [theme.breakpoints.down('xs')]: {
             height: '200px',
             width: '300px',
@@ -145,7 +145,7 @@ const FlipCard = () => {
                                         </Card>
                                         <div className={classNames("flip-card-back", classes.backContent)}>
                                             <Typography className={classes.typo}>{flipCardItem.cardTitle}</Typography> 
-                                            <Typography className={classes.typo}>{flipCardItem.stack}<br/>{flipCardItem['stack-continued']}</Typography>
+                                            <Typography className={classes.typo}>{flipCardItem.stack}<br/>Stack <br/>{flipCardItem['stack-continued']}</Typography>
                                             <a className={classes.buttonAnchor} target="_blank" href={flipCardItem.link} ><Button disableRipple='true' variant="contained" color='secondary' className={classes.learnMoreButton}>
                                                 {t(flipCardItem.learnMoreButton)}
                                                 </Button>

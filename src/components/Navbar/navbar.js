@@ -7,7 +7,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 // import myLogo from "../d-logo.png";
 import MobileMenu from "../mobileMenu";
 import DesktopMenu from "../desktopMenu";
-import LanguageMenu from "../languageMenu";
+// import LanguageMenu from "../languageMenu";
 
 
 
@@ -51,7 +51,7 @@ const Navbar = () => {
           <Toolbar className={classes.toolBarOptions} > D
             {/* <img src={myLogo} alt="#" className={classes.myLogo} /> */}
             <div className={classes.navList}>
-              <LanguageMenu /> 
+              {/* <LanguageMenu />  */}
 
               {isMobile ? <MobileMenu /> : <DesktopMenu />}
             </div>

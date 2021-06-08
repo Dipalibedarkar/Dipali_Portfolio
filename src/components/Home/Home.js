@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../Assets/Images/dp.png';
+//import profileImage from '../../Assets/Images/dp.jpg';
 import { Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             lineHeight: '1em',
             fontSize: '50px',
-            color: '#10ABB0',
+            color: 'white',
         }
     },
 
@@ -51,8 +51,8 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: theme.spacing(2),
         backgroundColor: 'transparent',
         marginRight: '20px',
-        borderRadius: '0px',
-        borderRadius: '5px',
+        borderRadius: '30px',
+        
         border: '3px solid white',
         '&:hover': {
             backgroundColor: '#ffffff',
@@ -66,14 +66,20 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '5px'
     },
 
-    image: {
-        
-        width: '15%',
-        height: '30%',
-        borderRadius: '2%',
-        
-        
-    }
+    // image: {
+    //     padding: '30px 0 32px 0',
+    //     width: '20%',
+    //     height: '30%',
+    //     borderRadius: '10%',
+    //     [theme.breakpoints.down('sm')]: {
+    //         width: '50%',
+    //         height: '50%',
+    //     },
+    //     [theme.breakpoints.down('xs')]: {
+    //         width: '50%',
+    //         height: '50%',
+    //     }
+    // },
 }))
 
 const Home = () => {
@@ -84,11 +90,11 @@ const { t } = useTranslation(['home']); // i18n component
        
             <div id='home'>
                 <div className={classes.typoContainer}>
-                <img src={profileImage} alt={'Dipali'} className={classes.image}/>
+                {/* <img src={profileImage} alt={'Dipali'} className={classes.image}/> */}
                     <Typography className={classNames(classes.typo, classes.nameTypo)} variant='h2'>
                         <Typist
                             sentences={[t('I am Dipali...')]}
-                            cursorColor={'#10ABB0'}
+                            cursorColor={'white'}
                             typingSpeed={120}
                             loop={false} 
                         />

@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         textAlign: 'center',
         padding: '0 0 50px 0',
+        margin: '60px',
     },
 
     iconsDiv: {
@@ -46,8 +47,8 @@ const useStyles = makeStyles((theme) => ({
 
     card: {
         background: '#a0b1c6',
-        height: '300px',
-        width: '300px',
+        height: '260px',
+        width: '240px',
         borderBottom: '4px solid rgb(123,120,125);',
 
     },
@@ -103,7 +104,9 @@ const TechStack = ({match}) => {
             language_PracticeList: 'Agile, SCRUM',
             tools: 'about:Tools',
             tooList: 'Trello, Discord'
-        }
+        },
+        
+
     ]
 
 return (

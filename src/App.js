@@ -17,9 +17,11 @@ const App = () => {
         <Navbar />
         <Home />
         <About />
+       
         <Portfolio />
          
         <Footer />
+        
       </div>
     
   );

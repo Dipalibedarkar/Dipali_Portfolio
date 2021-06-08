@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Divider, Button } from '@material-ui/core';
 import Techstack from './TechStack';
-//import profileImage from '../../Assets/Images/p.jpeg';
+import profileImage from '../../Assets/Images/dp.jpg';
 import Fade from 'react-reveal/Fade';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import { useTranslation } from 'react-i18next';
@@ -46,8 +46,8 @@ const useStyles = makeStyles((theme) => ({
 
     image: {
         padding: '30px 0 32px 0',
-        width: '50%',
-        height: '40%',
+        width: '20%',
+        height: '15%',
         borderRadius: '10%',
         [theme.breakpoints.down('sm')]: {
             width: '50%',
@@ -96,7 +96,7 @@ const About = () => {
                 </Typography>
 
                 <div className={classes.aboutMe}>
-                    {/* <img src={profileImage} alt={'Dipali'} className={classes.image}/> */}
+                  <img src={profileImage} alt={'Dipali'} className={classes.image}/> 
                     <br></br>
                     <a href={t('https://dipali-bedarkar-cv.netlify.app/')} target="_blank" className={classes.buttonAnchor}>
 

@@ -48,7 +48,7 @@
 
   /* Style the back side */
 .flip-card-back {
-    background-color: #10ABB0;
+  background: linear-gradient(308deg, rgba(31,182,230,1) 0%, rgba(56,215,200,0.8995973389355743) 100%);
     color: white;
     transform: rotateY(180deg);
 }
