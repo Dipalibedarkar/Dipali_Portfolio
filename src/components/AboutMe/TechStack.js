@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 //import ComputerIcon from '@material-ui/icons/Computer';
+
+import StorageIcon from '@material-ui/icons/Storage';
 import './TS.css'
 
 /************************************************************************************/
@@ -47,10 +49,13 @@ const useStyles = makeStyles((theme) => ({
 
     card: {
         background: '#a0b1c6',
-        height: '260px',
+        height: '300px',
         width: '240px',
         borderBottom: '4px solid rgb(123,120,125);',
-
+        '&:hover': {
+            background: 'radial-gradient(circle, rgba(142,143,149,0.969625350140056) 0%, rgba(70,252,235,1) 100%)',
+            color: 'black'
+        }
     },
 
     
@@ -81,7 +86,7 @@ const TechStack = ({match}) => {
         {
             id: 1,
             category: 'about:Front-End Development',
-            icon: 'fas fa-database',
+            icon: 'StorageIcon',
             languages_practices: 'about:Languages',
             language_PracticeList: 'HTML5, CSS3, JavaScript, ReactJS',
             tools: 'about:Tools',

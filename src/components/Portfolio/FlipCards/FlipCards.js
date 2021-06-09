@@ -144,8 +144,9 @@ const FlipCard = () => {
                                         <Card style={{backgroundImage: `url(${flipCardItem.imageURL})`}} elevation={8} className={classNames("flip-card-front", classes.card)}>
                                         </Card>
                                         <div className={classNames("flip-card-back", classes.backContent)}>
-                                            <Typography className={classes.typo}>{flipCardItem.cardTitle}</Typography> 
-                                            <Typography className={classes.typo}>{flipCardItem.stack}<br/>Stack <br/>{flipCardItem['stack-continued']}</Typography>
+                                            <Typography className={classes.typo}>{flipCardItem.cardTitle}</Typography>
+                                            <br/>Stack <br/> 
+                                            <Typography className={classes.typo}>{flipCardItem.stack}{flipCardItem['stack-continued']}</Typography>
                                             <a className={classes.buttonAnchor} target="_blank" href={flipCardItem.link} ><Button disableRipple='true' variant="contained" color='secondary' className={classes.learnMoreButton}>
                                                 {t(flipCardItem.learnMoreButton)}
                                                 </Button>
