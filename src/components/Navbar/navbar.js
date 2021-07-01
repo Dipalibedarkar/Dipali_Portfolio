@@ -4,7 +4,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-// import myLogo from "../d-logo.png";
+ import myLogo from "../../Assets/Images/logo1.png";
 import MobileMenu from "../mobileMenu";
 import DesktopMenu from "../desktopMenu";
 // import LanguageMenu from "../languageMenu";
@@ -48,8 +48,8 @@ const Navbar = () => {
    
       <div id="myHeader" className={classes.root}>
         <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
-          <Toolbar className={classes.toolBarOptions} > D
-            {/* <img src={myLogo} alt="#" className={classes.myLogo} /> */}
+          <Toolbar className={classes.toolBarOptions} > 
+            <img src={myLogo} alt="#" className={classes.myLogo} /> 
             <div className={classes.navList}>
               {/* <LanguageMenu />  */}
 

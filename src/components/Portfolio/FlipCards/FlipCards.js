@@ -2,6 +2,7 @@ import React from 'react';
 import Project1 from '../../../Assets/Images/Y_Combinator.png';
 import Project2 from '../../../Assets/Images/MEME.jpg';
 import Project3 from '../../../Assets/Images/poke.jpg';
+import Project4 from '../../../Assets/Images/Inq.jpg';
 import { Typography, Card, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
@@ -127,13 +128,20 @@ const FlipCard = () => {
             'learnMoreButton': 'projects:Project',
             'link': 'https://pokefight-workshop.netlify.app/',
         },
+        {
+            'cardTitle': 'Inquziable : Ignite Your Brain',
+            'imageURL': Project4,
+            'stack': 'ReactJS, Tailwind CSS, Socket Io, Node Express, PostgreSQL, Figma ',
+            'learnMoreButton': 'projects:Final Project In WBS Coding School',
+            'link': 'https://www.inquizable.com/',
+        },
     ];
     
     // <--- END - JSX items list ---> //
 
 
     return (
-        
+        <>
             <div className={classes.wrapper}>
                 {
                     flipCardItems.map(flipCardItem => {
@@ -157,7 +165,14 @@ const FlipCard = () => {
                         )
                     })
                 }
+
+              
+                
+      
+    
             </div>
+            
+            </>
         
     )
 }
