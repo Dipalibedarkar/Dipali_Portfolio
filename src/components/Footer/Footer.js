@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         padding: '1px 0 0 0',
-        backgroundColor: '#1B242F'
+        background: 'linear-gradient(308deg, rgb(8, 80, 102) 0%, rgba(15, 138, 125, 0.9) 100%)',
         
     },
 
