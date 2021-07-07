@@ -2,10 +2,10 @@
     background-color: transparent;
     width: 460px;
     height: 300px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
 }
 
-/* ADDED BY KENE */
+
 @media (max-width: 576px) { 
   .flip-card {
     width: 300px;
@@ -13,11 +13,7 @@
 }
 }
 
-/* img{
-    width: 300px;
-    height: 300px;
-} */
-  /* This container is needed to position the front and back side */
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -27,12 +23,12 @@
     transform-style: preserve-3d;
 }
 
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-  /* Position the front and back side */
+  
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -40,15 +36,15 @@
     backface-visibility: hidden;
 }
 
-  /* Style the front side (fallback if image is missing) */
+  
 .flip-card-front {
     background-color: #bbb;
     color: black;
 }
 
-  /* Style the back side */
+ 
 .flip-card-back {
-  background: linear-gradient(308deg, rgba(31,182,230,1) 0%, rgba(56,215,200,0.8995973389355743) 100%);
+  background: linear-gradient(308deg, rgb(8, 80, 102) 0%, rgba(15, 138, 125, 0.9) 100%);
     color: white;
     transform: rotateY(180deg);
 }

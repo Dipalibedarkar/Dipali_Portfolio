@@ -37,9 +37,14 @@ const MobileMenu = () => {
             'component-id': 'Portfolio'
         },
         {
+            'menuTitle': 'navbar:wireframe',
+            'offset': 5,
+            'component-id': 'WireFrame'
+        },
+        {
             'menuTitle': 'navbar:contact',
-            'offset': -70,
-            'component-id': 'contact'
+            'offset': 5,
+            'component-id': 'Contact'
         },
     ];
 

@@ -6,14 +6,16 @@ import { useTranslation } from 'react-i18next';
 
 
 /************************************************************************************/
-                    // START DesktopMenu.js STYLES //
+// START DesktopMenu.js STYLES //
 /************************************************************************************/
 const useStyles = makeStyles((theme) => ({
-    
+
     toolBarOptions: {
         justifyContent: 'space-between',
-        minHeight: '11px',
+        minHeight: '15px',
         background: 'rgb(37, 37, 37)',
+        fontWeight: 'bold',
+        fontSize:'15px',
     },
 
     desktopNav: {
@@ -32,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: '#10ABB0',
             color: 'white',
             borderRadius: '30px',
-            
+
         },
     },
 }))
@@ -60,28 +62,33 @@ const DesktopMenu = () => {
             'offset': 5,
             'component-id': 'Portfolio'
         },
-        // {
-        //     'menuTitle': 'Contact',
-        //     'offset': -70,
-        //     'component-id': 'contact'
-        // },
-        
+        {
+            'menuTitle': 'navbar:wireframe',
+            'offset': 5,
+            'component-id': 'Wireframe'
+        },
+        {
+            'menuTitle': 'Contact',
+            'offset': 5,
+            'component-id': 'contact'
+        },
+
     ];
-    
+
     // <--- END - JSX items list ---> //
 
     return (
-       
-            <div className={classes.desktopNav}>
-                {menuItems.map(menuItem => {
-                    return (
-                        <Link activeClass="active" to={menuItem['component-id']} spy={true} smooth={true} offset={menuItem.offset} duration={1000}>
-                            <Button vartiant='body2' className={classes.deskTopNavTypo}>{t(menuItem.menuTitle)}</Button>
-                        </Link> 
-                    )
-                })}
-            </div>
-        
+
+        <div className={classes.desktopNav}>
+            {menuItems.map(menuItem => {
+                return (
+                    <Link activeClass="active" to={menuItem['component-id']} spy={true} smooth={true} offset={menuItem.offset} duration={1000}>
+                        <Button vartiant='body2' className={classes.deskTopNavTypo}>{t(menuItem.menuTitle)}</Button>
+                    </Link>
+                )
+            })}
+        </div>
+
     )
 }
 

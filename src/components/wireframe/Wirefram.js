@@ -1,17 +1,12 @@
 import React from 'react';
-import Project1 from '../../../Assets/Images/Y_Combinator.png';
-import Project2 from '../../../Assets/Images/MEME.jpg';
-import Project3 from '../../../Assets/Images/poke.jpg';
-import Project4 from '../../../Assets/Images/Inq.jpg';
-import Project5 from '../../../Assets/Images/chat.jpg';
+import Wireframe1 from '../../Assets/Images/inq-wirefram.jpg';
+import Wireframe2 from '../../Assets/Images/wireframe2.jpg';
+
 import { Typography, Card, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
-
-
-import './FlipCard.css';
 import { useTranslation } from 'react-i18next';
-
+import './wirfram.css';
 const useStyles = makeStyles((theme) => ({
     wrapper: {
         display: 'flex',
@@ -27,15 +22,15 @@ const useStyles = makeStyles((theme) => ({
 
     projectContainer: {
         display: 'flex',
-        marginTop: theme.spacing(2),
+        marginTop: theme.spacing(5),
         justifyContent: 'center',
         alignItems: 'center',
-        textAlign: 'center',
+        textAlign: 'hidden',
         margin: '15px',
         padding: '0 0 20px 0',
         [theme.breakpoints.down('xs')]: {
-            margin: '0px',
-            padding: '0px'
+            margin: '5px',
+            padding: '5px'
         }
     },
 
@@ -50,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: '4px solid #10ABB0',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        backgroundRepeat:' no-repeat',
+        backgroundRepeat: ' no-repeat',
         borderRadius: '10px',
         [theme.breakpoints.down('xs')]: {
             height: '200px',
@@ -75,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         marginTop: theme.spacing(4),
         paddingLeft: theme.spacing(2),
-        backgroundColor: 'transparent',
+         backgroundColor: '#10ABB0',
         margin: '20px',
         borderRadius: '0px',
         border: '3px solid white',
@@ -100,68 +95,46 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-const FlipCard = () => {
+const Wireframe = () => {
     const classes = useStyles();
-    const { t } = useTranslation(['projects']);  // i18n component
+    const { t } = useTranslation(['wirefram']);  // i18n component
 
-    // <--- START - JSX items list ---> //
 
-    const flipCardItems = [
+
+    const wireframIteams = [
         {
-            'cardTitle': 'Inquziable : Ignite Your Brain',
-            'imageURL': Project4,
-            'stack': 'ReactJS, Tailwind CSS, Socket Io, Node Express, PostgreSQL, Figma ',
-            'learnMoreButton': 'projects:Final Project In WBS Coding School',
-            'link': 'https://www.inquizable.com/',
+            'cardTitle': 'Mobile Wireframe for Inquziable',
+            'imageURL': Wireframe1,
+            'stack': 'Design in Figma ',
+            'learnMoreButton': 'projects: WireFrame',
+            'link': 'https://www.figma.com/proto/I5NdL5ou6My2V6eNsFVC7U/Inquizable-Mobile-Wireframe?node-id=2%3A2&scaling=scale-down&page-id=0%3A1',
         },
         {
-            'cardTitle': 'Socket Io Chat Application',
-            'imageURL': Project5,
-            'stack': 'ReactJS, CSS, Socket Io, Node Express, MongoDB ',
-            'learnMoreButton': 'projects:Project',
-            'link': 'https://socketio-chat-application.netlify.app/',
+            'cardTitle': 'Desktop Wirframe:Frontend monitor',
+            'imageURL': Wireframe2,
+            'stack': 'Design in Figma ',
+            'learnMoreButton': 'projects: WireFrame',
+            'link': 'https://www.figma.com/proto/H7d9RAnqHaalvFwhlEnjtO/Fronted-Monitor-Design-Challenge?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1',
         },
-        {
-            'cardTitle': 'Hacker New Clone',
-            'imageURL': Project1,
-            'stack': 'ReactJS, Material UI, Bootstrape ',
-            'stack-continued': 'API Clone',
-            'learnMoreButton': 'projects:Project',
-            'link': 'https://hacker-news-clone-dipali.netlify.app/',
-        },
-        {
-            'cardTitle': 'Meme Generator',
-            'imageURL': Project2,
-            'stack': 'ReactJS, CSS, Bootstrape, API fetch',
-            'learnMoreButton': 'projects:Project',
-            'link': 'https://memegeneratordipali.netlify.app/',
-        },
-        {
-            'cardTitle': 'Pokemone Fight Game',
-            'imageURL': Project3,
-            'stack': 'ReactJS, CSS, JS3, Fiber, Rebuss UI, Node Express, MongoDB ',
-            'learnMoreButton': 'projects:Project',
-            'link': 'https://pokefight-workshop.netlify.app/',
-        },
-        
-        
+
     ];
-    
-    // <--- END - JSX items list ---> //
+
+
 
 
     return (
         <>
             <div className={classes.wrapper}>
+            
                 {
-                    flipCardItems.map(flipCardItem => {
+                    wireframIteams.map(flipCardItem => {
                         return (
                             
-                                <div className={classNames("flip-card", classes.projectContainer)}>
-                                    <div className={classNames("flip-card-inner", classes.projectContainer)}>
-                                        <Card style={{backgroundImage: `url(${flipCardItem.imageURL})`}} elevation={8} className={classNames("flip-card-front", classes.card)}>
+                                <div className={classNames("wf-card", classes.projectContainer)}><br></br>
+                                    <div className={classNames("wf-card-inner", classes.projectContainer)}> <br></br>
+                                        <Card style={{backgroundImage: `url(${flipCardItem.imageURL})`}} elevation={8} className={classNames("wf-card-front", classes.card)}>
                                         </Card>
-                                        <div className={classNames("flip-card-back", classes.backContent)}>
+                                        <div className={classNames("wf-card-back", classes.backContent)}>
                                             <Typography className={classes.typo}>{flipCardItem.cardTitle}</Typography>
                                             <br/>Stack <br/> 
                                             <Typography className={classes.typo}>{flipCardItem.stack}{flipCardItem['stack-continued']}</Typography>
@@ -178,13 +151,13 @@ const FlipCard = () => {
 
               
                 
-      
+                </div>
     
-            </div>
+           
             
             </>
         
     )
 }
 
-export default FlipCard;
+export default Wireframe;
