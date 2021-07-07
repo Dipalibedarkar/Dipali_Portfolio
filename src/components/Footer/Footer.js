@@ -23,14 +23,14 @@ const useStyles = makeStyles((theme) => ({
     margin: '10px'
     },
 
-    // icons: {
-    //     fontSize: '29px',
-    //     fontWeight: '400px',
-    //     color: 'white',
-    //     '&:hover': {
-    //         color: '#10ABB0',
-    //     },
-    // },
+    icons: {
+       fontSize: '29px',
+        fontWeight: '400px',
+        color: 'white',
+         '&:hover': {
+             color: '#10ABB0',
+        },
+     },
 
     iconsContainer: {
         display: 'flex',
