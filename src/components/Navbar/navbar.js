@@ -19,8 +19,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   myLogo: {
-    height: "50px",
-    width: "50px",
+    height: "35px",
+    width: "35px",
+    borderRadius:'30px',
   },
 
   toolBarOptions: {

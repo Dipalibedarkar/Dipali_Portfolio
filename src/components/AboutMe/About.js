@@ -69,9 +69,10 @@ const useStyles = makeStyles((theme) => ({
     downloadButton: {
         fontFamily: 'Raleway, sans-serif',
         fontWeight: 'bold',
+        width:'300px',
         paddingLeft: theme.spacing(2),
         backgroundColor: 'transparent',
-        borderRadius: '0px',
+        borderRadius: '15px',
         border: '3px ',
         '&:hover': {
             backgroundColor: '#252525',
