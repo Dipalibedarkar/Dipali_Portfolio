@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Divider, Button } from '@material-ui/core';
 import Techstack from './TechStack';
-import profileImage from '../../Assets/Images/dp.jpg';
+import profileImage from '../../Assets/Images/dpd.jpg';
 import Fade from 'react-reveal/Fade';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import { useTranslation } from 'react-i18next';
@@ -45,10 +45,10 @@ const useStyles = makeStyles((theme) => ({
     },
 
     image: {
-        padding: '30px 0 32px 0',
+        padding: '10px 0 32px 0',
         width: '20%',
-        height: '15%',
-        borderRadius: '10%',
+        height: '25%',
+       
         [theme.breakpoints.down('sm')]: {
             width: '50%',
             height: '50%',
@@ -96,10 +96,10 @@ const About = () => {
                 {t('I am a creative, artistic and ambitious Software Developer with a talent for thinking outside the box and coming up with innovative ideas and designs.')}
             </Typography>
 
-            <div className={classes.aboutMe}>
+            <div className={classes.aboutMe} >
                 <img src={profileImage} alt={'Dipali'} className={classes.image} />
                 <br></br>
-                <a href={('https://dipali-bedarkar-cv.netlify.app/')} target="_blank" className={classes.buttonAnchor}>
+                <a href={('https://dipali-bedarkar-cv.netlify.app/')} target="blank" className={classes.buttonAnchor}>
                     <Button
                         disableRipple='true' variant="contained" className={classes.downloadButton} to="CV">
                         {t('Resume')}<VisibilityIcon fontSize='medium' style={{ paddingLeft: '10px' }} />

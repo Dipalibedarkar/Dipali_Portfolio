@@ -5,9 +5,7 @@ import { Link } from "react-scroll";
 import { useTranslation } from 'react-i18next';
 
 
-/************************************************************************************/
-// START DesktopMenu.js STYLES //
-/************************************************************************************/
+
 const useStyles = makeStyles((theme) => ({
 
     toolBarOptions: {
@@ -42,9 +40,9 @@ const useStyles = makeStyles((theme) => ({
 
 const DesktopMenu = () => {
     const classes = useStyles();
-    const { t } = useTranslation(['navbar']);  // i18n component
+    const { t } = useTranslation(['navbar']);  // i18n component need to update
 
-    // <--- START - JSX items list ---> //
+    
 
     const menuItems = [
         {
@@ -72,21 +70,31 @@ const DesktopMenu = () => {
              'offset': 5,
              'component-id': 'contact'
          },
+        
 
     ];
 
-    // <--- END - JSX items list ---> //
+   
 
     return (
 
         <div className={classes.desktopNav}>
             {menuItems.map(menuItem => {
                 return (
+                    <>
                     <Link activeClass="active" to={menuItem['component-id']} spy={true} smooth={true} offset={menuItem.offset} duration={1000}>
                         <Button vartiant='body2' className={classes.deskTopNavTypo}>{t(menuItem.menuTitle)}</Button>
                     </Link>
+                    
+                </>
                 )
             })}
+            <a href={('https://dipali-bedarkar-cv.netlify.app/')} target= "blank" >
+               <Button
+                         variant="body2" className={classes.deskTopNavTypo} >
+                        {('Resume')}
+                    </Button>
+                </a>
         </div>
 
     )

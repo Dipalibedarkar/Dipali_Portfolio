@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Card } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+
 import Button from '@material-ui/core/Button';
 import './contact.css'
 

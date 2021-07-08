@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Portfolio from "./components/Portfolio/Portfolio";
 import WireframeTitle from './components/wireframe/wireframHeading'
  
-import ContactForm from './components/Contact/FormSpree'
+
 
 
 
