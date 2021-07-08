@@ -1,11 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
-import classNames from 'classnames';
+//import classNames from 'classnames';
 import { animateScroll as scroll } from 'react-scroll';
-import { useTranslation } from 'react-i18next';
-import Icon from '@material-ui/core/Icon';
-import { white } from '@material-ui/core/colors';
+//import { useTranslation } from 'react-i18next';
+//import Icon from '@material-ui/core/Icon';
+//mport { white } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Footer = () => {
     const classes = useStyles();
-    const { t } = useTranslation(['footer']);  // i18n component
+    //const { t } = useTranslation(['footer']);  // i18n component
 
     return (
         

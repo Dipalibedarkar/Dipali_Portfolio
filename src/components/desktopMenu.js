@@ -67,11 +67,11 @@ const DesktopMenu = () => {
             'offset': 5,
             'component-id': 'Wireframe'
         },
-        // {
-        //     'menuTitle': 'Contact',
-        //     'offset': 5,
-        //     'component-id': 'contact'
-        // },
+         {
+             'menuTitle': 'Contact',
+             'offset': 5,
+             'component-id': 'contact'
+         },
 
     ];
 

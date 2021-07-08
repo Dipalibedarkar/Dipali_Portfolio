@@ -1,17 +1,20 @@
 import React from 'react';
 import { Typography, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import ContactForm from './contactForm'
+import ContactForm from './FormSpree'
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({    
     wrapper: {
-        background: '#F5F5F5',
-        padding: '80px 0 20px 0',
+        background: 'white',
+        padding: '50px 0 20px 0',
         paddingBottom: '5px',
-        margin: 'auto'
+        margin: 'auto',
+        width:'500px',
+        textAlign:'center',
+        
     },
 
     header: {
@@ -48,7 +51,7 @@ const ContactTitle = () => {
                 <div className={classes.header}>
                     <Fade left><Typography className={classes.portfolioTypo} variant='h4'>{t('projects:Conatct')}</Typography></Fade>
                     <Fade right><Divider class={classes.divider}>
-
+                   
                     </Divider>
                     </Fade>
                 </div>

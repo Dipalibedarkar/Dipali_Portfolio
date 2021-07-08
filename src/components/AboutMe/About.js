@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Divider, Button } from '@material-ui/core';
 import Techstack from './TechStack';
-import profileImage from '../../Assets/Images/dpd.jpg';
+import profileImage from '../../Assets/Images/dp.jpg';
 import Fade from 'react-reveal/Fade';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import { useTranslation } from 'react-i18next';
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     downloadButton: {
         fontFamily: 'Raleway, sans-serif',
         fontWeight: 'bold',
-        width:'300px',
+        width: '300px',
         paddingLeft: theme.spacing(2),
         backgroundColor: 'transparent',
         borderRadius: '15px',
@@ -86,32 +86,31 @@ const About = () => {
     const { t } = useTranslation(['about']);  // i18n component
 
     return (
-        
-            <div className={classes.wrapper} id='about-me'>
-                <Fade left>
-                    <Typography className={classes.aboutTypo} variant='h4'>{t('About Me')}</Typography>
-                </Fade>
-                <Fade right><Divider class={classes.divider}></Divider></Fade>
-                <Typography style={{ fontFamily: 'Raleway, sans-serif', textAlign: 'center', width: '50%', padding: '30px 20px 0 2px' }} variant='body1'>
-                    {t('I am a creative, artistic and ambitious Software Developer with a talent for thinking outside the box and coming up with innovative ideas and designs.')}
-                </Typography>
 
-                <div className={classes.aboutMe}>
-                  <img src={profileImage} alt={'Dipali'} className={classes.image}/> 
-                    <br></br>
-                    <a href={t('https://dipali-bedarkar-cv.netlify.app/')} target="_blank" className={classes.buttonAnchor}>
+        <div className={classes.wrapper} id='about-me'>
+            <Fade left>
+                <Typography className={classes.aboutTypo} variant='h4'>{t('About Me')}</Typography>
+            </Fade>
+            <Fade right><Divider class={classes.divider}></Divider></Fade>
+            <Typography style={{ fontFamily: 'Raleway, sans-serif', textAlign: 'center', width: '50%', padding: '30px 20px 0 2px' }} variant='body1'>
+                {t('I am a creative, artistic and ambitious Software Developer with a talent for thinking outside the box and coming up with innovative ideas and designs.')}
+            </Typography>
 
-                        <Button
-                            disableRipple='true' variant="contained" className={classes.downloadButton} to="CV">
-                            {t('Resume')}<VisibilityIcon fontSize='medium' style={{ paddingLeft: '10px' }} />
-                        </Button>
-                    </a>
-                </div>
-                <Techstack />
-
+            <div className={classes.aboutMe}>
+                <img src={profileImage} alt={'Dipali'} className={classes.image} />
+                <br></br>
+                <a href={('https://dipali-bedarkar-cv.netlify.app/')} target="_blank" className={classes.buttonAnchor}>
+                    <Button
+                        disableRipple='true' variant="contained" className={classes.downloadButton} to="CV">
+                        {t('Resume')}<VisibilityIcon fontSize='medium' style={{ paddingLeft: '10px' }} />
+                    </Button>
+                </a>
             </div>
+            <Techstack />
 
-        
+        </div>
+
+
     )
 }
 
