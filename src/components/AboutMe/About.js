@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Divider, Button } from '@material-ui/core';
 import Techstack from './TechStack';
-import profileImage from '../../Assets/Images/dp.jpg';
+import profileImage from '../../Assets/Images/dpd.jpg';
 import Fade from 'react-reveal/Fade';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import { useTranslation } from 'react-i18next';
