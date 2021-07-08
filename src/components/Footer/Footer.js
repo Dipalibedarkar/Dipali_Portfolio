@@ -9,6 +9,7 @@ import { white } from '@material-ui/core/colors';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+//import EmailSharpIcon from '@material-ui/icons/EmailSharp';
 
 const useStyles = makeStyles((theme) => ({
     footerContainer: {
@@ -86,6 +87,9 @@ const Footer = () => {
                     <a href='https://github.com/Dipalibedarkar'>
                         <GitHubIcon style={{ color: 'white', fontSize: 20 }} />
                     </a>
+                    {/* <a href='dipalibedarkar@gmail.com'>
+                        <EmailSharpIcon style={{ color: 'white', fontSize: 20 }} />
+                    </a> */}
                 </div>
                 <div className={classes.copyIconContainer}>
                     <Typography variant='caption' className={classes.copyRightTypo}>© All Rights Reserved</Typography>
@@ -93,7 +97,7 @@ const Footer = () => {
                         <KeyboardArrowUpIcon />
                     </button>
                 </div>
-
+                
             </div>
             </footer>
             
