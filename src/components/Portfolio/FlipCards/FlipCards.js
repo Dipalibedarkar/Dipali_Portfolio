@@ -112,7 +112,7 @@ const FlipCard = () => {
             'imageURL': Project4,
             'stack': 'ReactJS, Tailwind CSS, Socket Io, Node Express, PostgreSQL, Figma ',
             'learnMoreButton': 'projects:Final Project In WBS Coding School',
-            'link': 'https://www.inquizable.com/',
+            'link': 'https://www.inquizable.com/home',
         },
         {
             'cardTitle': 'Socket Io Chat Application',
