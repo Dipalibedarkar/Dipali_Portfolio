@@ -49,7 +49,7 @@ const ContactTitle = () => {
        
             <div id="contact" className={classes.wrapper}>
                 <div className={classes.header}>
-                    <Fade left><Typography className={classes.portfolioTypo} variant='h4'>{t('projects:Conatct')}</Typography></Fade>
+                    <Fade left><Typography className={classes.portfolioTypo} variant='h4'>{t('projects:Contact')}</Typography></Fade>
                     <Fade right><Divider class={classes.divider}>
                    
                     </Divider>
