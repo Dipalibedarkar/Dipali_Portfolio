@@ -129,20 +129,7 @@ const FlipCard = () => {
             'learnMoreButton': 'projects:Project',
             'link': 'https://hacker-news-clone-dipali.netlify.app/',
         },
-        {
-            'cardTitle': 'Meme Generator',
-            'imageURL': Project2,
-            'stack': 'ReactJS, CSS, Bootstrape, API fetch',
-            'learnMoreButton': 'projects:Project',
-            'link': 'https://memegeneratordipali.netlify.app/',
-        },
-        {
-            'cardTitle': 'Pokemone Fight Game',
-            'imageURL': Project3,
-            'stack': 'ReactJS, CSS, JS3, Fiber, Rebuss UI, Node Express, MongoDB ',
-            'learnMoreButton': 'projects:Project',
-            'link': 'https://pokefight-workshop.netlify.app/',
-        },
+        
         
         
     ];
